@@ -4,6 +4,6 @@ namespace Passwd
 {
 	internal interface IDomainContext: IDisposable
 	{
-		bool TryFindUser(string samAccountName, out IDomainUser domainUser);
+		bool TryFindUser(string accountName, out IDomainUser domainUser);
 	}
 }

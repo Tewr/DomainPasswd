@@ -11,15 +11,14 @@ namespace Passwd.SystemDirectoryServicesImpl
 			this.principalContext = principalContext;
 		}
 
-		public bool TryFindUser(string samAccountName, out IDomainUser result)
+		public bool TryFindUser(string accountName, out IDomainUser result)
 		{
 			result = null;
 			var findByIdentity =
-				UserPrincipal.FindByIdentity(this.principalContext, IdentityType.SamAccountName, samAccountName)
+				UserPrincipal.FindByIdentity(this.principalContext, IdentityType.SamAccountName, accountName)
 				??
-				UserPrincipal.FindByIdentity(this.principalContext, IdentityType.UserPrincipalName, samAccountName)
-				??
-				UserPrincipal.FindByIdentity(this.principalContext, IdentityType.Guid, samAccountName);
+				UserPrincipal.FindByIdentity(this.principalContext, IdentityType.UserPrincipalName, accountName);
+
 			if (findByIdentity == null)
 				return false;
 			result = new PrincipalDomainUser(findByIdentity);
