@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DomainPasswd")]
 [assembly: AssemblyDescription("Changes the password of a domain user other than the user durrently logged on. Do not use this application for computer accounts, use NET USER instead.")]
 [assembly: AssemblyProduct("DomainPasswd")]
-[assembly: AssemblyCopyright("Copyright © 2016 https://github.com/Tewr/DomainPasswd")]
+[assembly: AssemblyCopyright("Copyright © 2018 https://github.com/Tewr/DomainPasswd")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
