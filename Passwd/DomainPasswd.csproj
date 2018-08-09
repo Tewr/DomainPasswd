@@ -7,8 +7,8 @@
     <ProjectGuid>{B3308395-C446-47EC-915D-849ACD1EDF04}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Passwd</RootNamespace>
-    <AssemblyName>Passwd</AssemblyName>
+    <RootNamespace>DomainPasswd</RootNamespace>
+    <AssemblyName>DomainPasswd</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
